@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Anetics.UserControls
+</name>
+</assembly>
+<members>
+<member name="P:Anetics.UserControls.My.Resources.Resource1.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Anetics.UserControls.My.Resources.Resource1.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Anetics.UserControls.My.Resources.Resource1.LiveClockScr">
+	<summary>
+  Looks up a localized string similar to function ClockScr(spnID, fmt) {
+    var spn = document.getElementById(spnID);
+    var d = new Date();
+    spn.innerHTML = d.formatDate(fmt);
+
+    setTimeout("ClockScr('"+spnID+"','"+fmt+"');", 1000);
+
+}
+
+Date.prototype.formatDate = function (format) {
+    var out = "";
+    var d = this;
+    var Lmon = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    var Smon = new Array("Jan", "Feb", "Mar", "Apr", "May", "Ju [rest of string was truncated]";.
+</summary>
+</member><member name="T:Anetics.UserControls.My.Resources.Resource1">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Anetics.UserControls.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Anetics.UserControls.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Anetics.UserControls.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

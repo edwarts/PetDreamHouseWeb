@@ -1,0 +1,170 @@
+﻿<%@ Master Language="VB" CodeFile="Container.master.vb" Inherits="Container" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+    <link href="/App/CSS/Main.css" rel="stylesheet" type="text/css" />
+    <link href="/App/CSS/TabContainer.css" rel="stylesheet" type="text/css" />
+    <link href="/App/CSS/Browser.aspx" rel="stylesheet" type="text/css" />
+    <link href="/App/CSS/Inputs.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="/App/Images/favicon.ico" />
+	<link rel="icon" type="image/ico" href="/App/Images/favicon.ico" />
+    <script src="/App/Scripts/Rollover.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/App/Scripts/Common.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="http://use.typekit.com/fho7ocs.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31847249-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+	</script>
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <form id="form1" runat="server">
+        <asp:ToolkitScriptManager ID="TSM" runat="server">
+        </asp:ToolkitScriptManager>
+            
+                <div id="PageNavigation">
+                    <div class="ContentContainer">
+                            <asp:Hyperlink ID="lnkBasketSummary" runat="server" NavigateUrl="/Basket" style="position:absolute;top:2px;right:320px;" />
+                        <asp:HyperLink ID="lnkHome" NavigateUrl="/Home" runat="server"><img src="/App/Images/Body/Header/common/top-logo.jpg" alt="Pet Dream House" /></asp:HyperLink> 
+                            <asp:UpdatePanel ID="UPLogin" runat="server" UpdateMode="Conditional" >
+                                <Triggers>
+                                    <asp:AsyncPostBackTrigger ControlID="btnLogin" EventName="Click" />
+                                </Triggers>
+                                <ContentTemplate>
+                                    <div style="position:absolute;top:0px;right:0px;">
+                            
+                                        <asp:Hyperlink ID="lnkBasket" runat="server" ImageUrl="/App/Images/Body/Header/common/mybasket-topbutton.jpg" NavigateUrl="/Basket" />
+                                        <asp:Imagebutton ID="btnLogin" runat="server" ImageUrl="/App/Images/Body/Header/common/login-topbutton.jpg"  />
+                                        <uc:LoginForm ID="Login1" runat="server" />
+                                
+                                        <a id="lnkFacebook" runat="server" href="http://www.facebook.com/pages/PetDreamHouse/108409999294681" target="_blank"><img src="/App/Images/Body/Header/common/facebook.jpg" /></a>
+                                        <a id="lnkTwitter" runat="server" href="http://twitter.com/#!/petDreamHouse" target="_blank"><img src="/App/Images/Body/Header/common/twitter.jpg" /></a>
+                                        <a id="lnkLinkedIn" runat="server" href="http://www.linkedin.com/company/petdreamhouse-ltd" target="_blank"><img src="/App/Images/Body/Header/common/linkedIn.jpg" /></a>
+                                        <a id="lnkGoogle" runat="server" href="http://plus.google.com/101188850668614578033" target="_blank"><img src="/App/Images/Body/Header/common/google.jpg" /></a>
+                                    </div>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+
+                        <div id="MainNav" runat="server" style="position:absolute;top:55px;right:0px;">
+                            <uc:RolloverLink ID="lnkMainHome" NavigateUrl="/Home" runat="server" ImageFolder="/App/Images/Body/Header/common/" OffImage="home-off.png" OnImage="home-on.png" />
+                            <uc:RolloverLink ID="lnkMainStore" NavigateUrl="/Products" runat="server" ImageFolder="/App/Images/Body/Header/common/" OffImage="our-store-off.png" OnImage="our-store-on.png" />
+                            <uc:RolloverLink ID="lnkMainConcept" NavigateUrl="/Concept" runat="server" ImageFolder="/App/Images/Body/Header/common/" OffImage="design-concepts-off.png" OnImage="design-concepts-on.png" />
+                            <uc:RolloverLink ID="lnkMainCool" NavigateUrl="/Cool" runat="server" ImageFolder="/App/Images/Body/Header/common/" OffImage="cool-stuff-off.png" OnImage="cool-stuff-on.png" />
+                            <uc:RolloverLink ID="lnkMainAbout" NavigateUrl="/about" runat="server" ImageFolder="/App/Images/Body/Header/common/" OffImage="about-off.png" OnImage="about-on.png" />
+                        </div>
+
+                        <div style="position:absolute;top:106px;right:0px;">
+                            <asp:ContentPlaceHolder id="NavigationContainer" runat="server" />
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div id="PageContent">
+                    <div class="ContentContainer">
+            
+                        <asp:ContentPlaceHolder id="ContentContainer" runat="server" />
+                    </div>
+                </div>
+                <div id="PageFooter">
+                    <div class="ContentContainer">
+                        <asp:panel ID="pnlFooterLinks" class="FooterLinks" runat="server">
+                            <div>
+                                <asp:hyperlink ID="Hyperlink1" runat="server" NavigateUrl="/">Home</asp:hyperlink>
+                                <asp:hyperlink ID="lnkAbout2" runat="server" NavigateUrl="/About">About Us</asp:hyperlink>
+                                <asp:hyperlink ID="lnkContact2" runat="server" NavigateUrl="/Contact">Contact us</asp:hyperlink>
+								<asp:hyperlink ID="lnkMap2" runat="server" NavigateUrl="/Map.aspx">Site Map</asp:hyperlink>
+                            </div>
+
+                            <div>
+                                <asp:hyperlink ID="lnkDelivery2" runat="server" NavigateUrl="/Delivery">Delivery Information</asp:hyperlink>
+                                <asp:hyperlink ID="lnkFaq2" runat="server" NavigateUrl="/faq.aspx">Help / FAQ</asp:hyperlink>
+								<asp:hyperlink ID="lnkTerms2" runat="server" NavigateUrl="/WebsiteTerms">Website Terms</asp:hyperlink>
+								<asp:hyperlink ID="lnkPrivacy2" runat="server" NavigateUrl="/Privacy">Privacy Policy</asp:hyperlink>
+                                
+                            </div>
+
+                            <div>
+                                <asp:hyperlink ID="Hyperlink2" runat="server" NavigateUrl="/Concept">Concepts</asp:hyperlink>
+                                <asp:hyperlink ID="Hyperlink3" runat="server" NavigateUrl="/HowitWorks">How it Works</asp:hyperlink>
+                                <asp:hyperlink ID="Hyperlink4" runat="server" NavigateUrl="/Concept/Submit.aspx">Submit a Concept</asp:hyperlink>
+								<asp:hyperlink ID="Hyperlink7" runat="server" NavigateUrl="/Submissionterms">Concept Terms</asp:hyperlink>
+                            </div>
+
+                            <div>
+                                <asp:hyperlink ID="lnkStore2" runat="server" NavigateUrl="/Store">Store</asp:hyperlink>
+                                <asp:hyperlink ID="Hyperlink6" runat="server" NavigateUrl="/Basket">Basket</asp:hyperlink>
+                                <asp:hyperlink ID="lnkDesigner2" runat="server" NavigateUrl="/Designer">Designer to you</asp:hyperlink>
+								<asp:hyperlink ID="lnkFeedback2" runat="server" NavigateUrl="/Feedbacka.aspx">Feedback</asp:hyperlink>
+                            </div>
+
+                            <div>
+                                <asp:hyperlink ID="lnkCustomerService2" runat="server" NavigateUrl="/Cool">Cool Stuff</asp:hyperlink>
+                                <asp:hyperlink ID="lnkSubmit2" runat="server" NavigateUrl="/Cool/Submit.aspx">Send Your Stuff</asp:hyperlink>
+                                <asp:hyperlink ID="lnkMPR2" runat="server" NavigateUrl="/Modern">Modern Pet Revolution</asp:hyperlink>
+                            </div>
+                        </asp:panel> 
+                        <!-- <asp:ImageButton ID="btnLogin2" runat="server" ImageUrl="/App/Images/Body/Footer/footer-login.jpg" style="position:absolute;top:80px;left:0px;" /> -->
+
+                        <div class="Social">
+                            <asp:HyperLink Target="_blank" ID="lnkFacebook2" runat="server" ImageUrl="/App/Images/Body/Footer/facebook.jpg" NavigateUrl="http://www.facebook.com"></asp:HyperLink>
+                            <asp:HyperLink Target="_blank" ID="lnkTwitter2" runat="server" ImageUrl="/App/Images/Body/Footer/twitter.jpg" NavigateUrl="/Twitter"></asp:HyperLink>
+                            <asp:HyperLink Target="_blank" ID="lnkLinkedIn2" runat="server" ImageUrl="/App/Images/Body/Footer/linkedIn.jpg" NavigateUrl="/linkedIn"></asp:HyperLink>
+                            <asp:HyperLink Target="_blank" ID="lnkGoogle2" runat="server" ImageUrl="/App/Images/Body/Footer/google.jpg" NavigateUrl="/google"></asp:HyperLink>
+                        </div>
+                        <asp:HyperLink CssClass="Logo" runat="server" NavigateUrl="/" ImageUrl="/App/Images/Body/Footer/footer-logo.jpg" />
+                        <asp:ContentPlaceHolder id="FooterContainer" runat="server" />
+                    </div>
+                </div>
+
+    </form>
+</body>
+<script type="text/javascript">
+    function RequestLogonDialog() {
+        try {
+            if (e.keyCode == 13) { return false; }
+        } catch(err) {}
+        document.getElementById("<%=btnLogin.ClientID %>").click();
+        return false;
+    }
+
+    function CancelEnter() {
+
+    }
+
+    function checkEnter(e) {
+        e = e || event;
+        var i = (e.keyCode || event.which || event.charCode || 0) !== 13;
+        return i;
+    } 
+</script>
+</html>

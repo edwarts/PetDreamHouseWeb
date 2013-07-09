@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resizeProfiles>
+    <profile name="MainProductImage">
+        <w>500</w>
+        <h>375</h>
+        <z>100</z>
+        <q>80</q>
+        <bg>#ffffff</bg>
+    </profile>
+</resizeProfiles>

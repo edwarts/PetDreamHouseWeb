@@ -1,0 +1,16 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/Admin.master" AutoEventWireup="false" CodeFile="AdminProducts.master.vb" Inherits="MasterPages_AdminProducts" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+    <asp:panel ID="SubNav" CssClass="SubNav" runat="server">
+        <asp:HyperLink ID="lnkList" runat="server" NavigateUrl="/Admin13/Products/" Text="List Products"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkAdd" runat="server" NavigateUrl="/Admin13/Products/Add" Text="Add Product"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkPromo" runat="server" NavigateUrl="/Admin13/Products/Promo" Text="List Promotional Codes"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkPromoAdd" runat="server" NavigateUrl="/Admin13/Products/Promo/Add" Text="Add Promotional Code"></asp:HyperLink><!--
+     -->
+    </asp:panel>
+    
+    <asp:ContentPlaceHolder id="SubContentBody" runat="server" />
+</asp:Content>
+

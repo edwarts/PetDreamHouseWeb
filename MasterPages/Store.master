@@ -1,0 +1,24 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/Container.master" AutoEventWireup="false" CodeFile="Store.master.vb" Inherits="Store" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder ID="SubHead" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="NavigationContainer" Runat="Server">
+    <asp:Panel ID="NavControls" runat="server" style="display:inline-block;margin-right:0px;">
+        
+        <uc:RolloverLink ID="lnkStore" runat="server" NavigateUrl="/Products" ImageFolder="/App/Images/Body/Header/store/nav/" OffImage="store-off.png" OnImage="store-on.png" />
+		
+		<uc:RolloverLink ID="lnkDesigner" runat="server" NavigateUrl="/Designer" ImageFolder="/App/Images/Body/Header/store/nav/" OffImage="designer-off.png" OnImage="designer-on.png" />
+        <uc:RolloverLink ID="lnkDelivery" runat="server" NavigateUrl="/Delivery" ImageFolder="/App/Images/Body/Header/common/nav/" OffImage="delivery-off.png" OnImage="delivery-on.png" />
+        <uc:RolloverLink ID="lnkContact" runat="server" NavigateUrl="/contact" ImageFolder="/App/Images/Body/Header/common/nav/" OffImage="contact-off.png" OnImage="contact-on.png" />
+    </asp:Panel>
+
+    <asp:ContentPlaceHolder ID="SubNavigationContainer" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentContainer" Runat="Server">
+    <asp:ContentPlaceHolder ID="SubContentContainer" runat="server" />
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="FooterContainer" Runat="Server">
+    <asp:ContentPlaceHolder ID="SubFooterContainer" runat="server" />
+</asp:Content>
+

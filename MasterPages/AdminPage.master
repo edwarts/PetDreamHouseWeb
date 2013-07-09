@@ -1,0 +1,24 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/Admin.master" AutoEventWireup="false" CodeFile="AdminPage.master.vb" Inherits="MasterPages_AdminPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+    <asp:panel ID="SubNav" CssClass="SubNav" runat="server">
+        <asp:HyperLink ID="lnkList" runat="server" NavigateUrl="/Admin13/Page/Home" Text="Home"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkAdd" runat="server" NavigateUrl="/Admin13/Page/About" Text="About Us"></asp:HyperLink><!--
+     --><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/Admin13/Page/Delivery" Text="Delivery"></asp:HyperLink><!--
+     --><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="/Admin13/Page/Designer" Text="Designer"></asp:HyperLink><!--
+     --><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="/Admin13/Page/HowItWorks" Text="How It Works"></asp:HyperLink><!--
+	 --><asp:HyperLink ID="lnkMPR" runat="server" NavigateUrl="/Admin13/Page/Modern" Text="Modern Pet Revolution"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="/Admin13/Page/Contact" Text="Contact"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkPrivacy" runat="server" NavigateUrl="/Admin13/Page/Privacy" Text="Privacy Policy"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkWebsiteTerms" runat="server" NavigateUrl="/Admin13/Page/WebsiteTerms" Text="Website Terms"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkSubmitTerms" runat="server" NavigateUrl="/Admin13/Page/SubmissionTerms" Text="Submission Terms"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkDoneSubmission" runat="server" NavigateUrl="/Admin13/Page/DoneSubmission" Text="Submission Text"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkPayPalDone" runat="server" NavigateUrl="/Admin13/Page/PayPalDone" Text="PayPal Completed"></asp:HyperLink>
+    </asp:panel>
+
+    
+    <asp:ContentPlaceHolder id="SubContentBody" runat="server" />
+</asp:Content>
+

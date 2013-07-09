@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /Admin13
+Disallow: /DoneSubmission
+Disallow: /Lostpassword.aspx
+Disallow: /NotFound.aspx
+Disallow: /submissionterms
+Disallow: /websiteterms
+Disallow: /privacy
+Disallow: /Basket
+Disallow: /LostPassword
+
+
+
+
+
+
+
+
+1

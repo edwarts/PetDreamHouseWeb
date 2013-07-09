@@ -1,0 +1,34 @@
+﻿
+.SkinnedTable
+{
+    border-top:1px solid #888888;    
+    border-left:1px solid #888888;
+}
+
+.SkinnedTable tr{cursor:pointer;}
+
+.SkinnedTable tr th
+{
+    font-weight:normal;
+    text-align:left;
+    background-color:#cccccc;
+    padding:5px 5px;
+    border-bottom:1px solid #888888;    
+    border-right:1px solid #888888;
+}
+
+.SkinnedTable tr td
+{
+    font-weight:normal;
+    text-align:left;
+    padding:5px 5px;
+    border-bottom:1px solid #888888;    
+    border-right:1px solid #888888;
+    vertical-align:middle;
+}
+
+.SkinnedTable tr:hover td, .SkinnedTable .RowOn{background-color:#0055ff;color:White;}
+.SkinnedTable tr:hover th{background-color:#cccccc;color:black;}
+
+.SkinnedTable tr td a img{vertical-align:text-bottom;margin-right:3px;}
+.SkinnedTable tr td input{vertical-align:text-bottom;margin-right:3px;}

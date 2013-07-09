@@ -1,0 +1,60 @@
+﻿.Tabs 
+{
+    
+}
+
+.Tabs .ajax__tab_header
+{
+    background-image:url(data:image/jpeg;Base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiCgkJAQgwAAIEAP/I7Cv+AAAAAElFTkSuQmCC);
+    background-repeat:repeat-x;
+    background-position:center bottom;
+    cursor:pointer;
+}
+
+.Tabs .ajax__tab_outer
+{
+    border-left:1px solid #545454;    
+    border-top:1px solid #545454;
+    border-right:1px solid #545454;
+    border-bottom:1px solid #545454;
+    padding:5px 7px;
+    z-index:10;
+    color:Gray;
+    background-color:#dedede;
+    margin-right:1px;
+}
+
+.Tabs .ajax__tab_inner
+{
+}
+
+
+.Tabs .ajax__tab_header a{color:Gray;}
+.Tabs .ajax__tab_header a:hover{color:Black;}
+
+.Tabs .ajax__tab_active .ajax__tab_outer
+{
+    border-top:1px solid #545454;
+    border-bottom:1px solid #ffffff;
+    background-color:#ffffff;
+    padding:0px;
+    color:#333333;
+}
+
+.Tabs .ajax__tab_active .ajax__tab_inner
+{
+    padding:3px 7px 5px 7px;
+    border-top:2px solid yellow;
+} 
+
+
+.Tabs .ajax__tab_active a{color:Black;}
+
+.Tabs .ajax__tab_body
+{
+    border-left:1px solid #545454;
+    border-bottom:1px solid #545454;
+    border-right:1px solid #545454;
+    min-height:100px;
+    position:relative;
+}

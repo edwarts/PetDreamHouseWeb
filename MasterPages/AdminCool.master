@@ -1,0 +1,14 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/Admin.master" AutoEventWireup="false" CodeFile="AdminCool.master.vb" Inherits="MasterPages_AdminCool" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+    <asp:panel ID="SubNav" CssClass="SubNav" runat="server">
+        <asp:HyperLink ID="lnkList" runat="server" NavigateUrl="/Admin13/Cool/" Text="List Cool Stuff"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkAdd" runat="server" NavigateUrl="/Admin13/Cool/Add" Text="Add Cool Stuff"></asp:HyperLink>
+    </asp:panel>
+    
+    
+    <asp:ContentPlaceHolder id="SubContentBody" runat="server" />
+</asp:Content>
+

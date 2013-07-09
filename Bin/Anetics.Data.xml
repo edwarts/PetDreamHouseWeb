@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Anetics.Data
+</name>
+</assembly>
+<members>
+<member name="M:Anetics.Data.EasySql.#ctor(System.Data.SqlClient.SqlConnection,System.Boolean)">
+	<summary>
+ Reuses an existing EasyDB Connection
+ </summary>
+	<param name="Conn">The Connection property of the host instance</param>
+</member><member name="P:Anetics.Data.EasySql.Connection">
+	<summary>
+ The connection property
+ </summary>
+</member><member name="P:Anetics.Data.EasySql.KeepAlive">
+	<summary>
+ Keeps the connection alive
+ </summary>
+</member><member name="P:Anetics.Data.EasySql.ReturnType">
+	<summary>
+ The format of the command response
+ </summary>
+</member><member name="P:Anetics.Data.EasySql.CommandText">
+	<summary>
+ The Sql Statement
+ </summary>
+</member><member name="P:Anetics.Data.EasySql.ErrorString">
+	<summary>
+ Errors that occured on a failed command
+ </summary>
+</member><member name="M:Anetics.Data.EasySql.AddParameter(System.String,System.Object)">
+	<summary>
+ Adds Sql Parameters
+</summary>
+	<param name="Name">The Parameter Name, @ will be added automatically</param>
+	<param name="Value">The Parameter Value</param>
+</member><member name="M:Anetics.Data.EasySql.RemoveParameter(System.String)">
+	<summary>
+ Removes a parameter from the parameter collection
+ </summary>
+	<param name="Name">The Parameter Name</param>
+</member><member name="M:Anetics.Data.EasySql.Execute">
+	<summary>
+ Executes the Sql Statement and returns the specified object type 
+ </summary>
+	<returns></returns>
+</member><member name="F:Anetics.Data.EasyDBReturnType.DataTable">
+	<summary>
+ Datatable
+ </summary>
+</member><member name="F:Anetics.Data.EasyDBReturnType.DataSet">
+	<summary>
+ Dataset
+ </summary>
+</member><member name="F:Anetics.Data.EasyDBReturnType.DataRow">
+	<summary>
+ A Single Datarow
+ </summary>
+</member><member name="F:Anetics.Data.EasyDBReturnType.Rows_Affected">
+	<summary>
+ The number of rows affected
+ </summary>
+</member><member name="F:Anetics.Data.EasyDBReturnType.Scope_Identity">
+	<summary>
+ Auto adds a SCOPE_IDENTITY() object to the query
+ </summary>
+</member><member name="F:Anetics.Data.EasyDBReturnType.Auto">
+	<summary>
+ Auto or not return object is required (Default)
+ </summary>
+</member><member name="F:Anetics.Data.EasyDBReturnType.Read_Async">
+	<summary>
+ Auto or not return object is required (Default)
+ </summary>
+</member><member name="F:Anetics.Data.EasyDBReturnType.Row_Count">
+	<summary>
+ Auto or not return object is required (Default)
+ </summary>
+</member><member name="P:Anetics.Data.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Anetics.Data.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Anetics.Data.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

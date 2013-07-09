@@ -1,0 +1,71 @@
+﻿*{margin:0px;padding:0px;}
+
+body{font-family:Arial;font-size:12px;width:100%;}
+img{border:none;}
+td{ vertical-align:top;}
+
+#Container{position:relative;width:100%;}
+
+#Header{height:60px;background-color:#EDEDED;border-bottom:1px solid #cccccc;}
+
+#Header h2{padding:20px 10px;font-size:20px;}
+
+.MainNav{width:150px;vertical-align:top;background-color:#EDEDED;}
+
+.MainNav a
+{
+    display:block;
+    width:130px;
+    padding:20px 10px;
+    font-weight:bold;
+    font-size:16px;
+    text-decoration:none;
+    border-bottom:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    color:#333333;
+}
+
+.MainNav a:hover, .MainNav .On{color:#0055ff; background-color:#dddddd;}
+
+.SubNav
+{
+    display:block;
+    border-bottom:1px solid #cccccc;
+    background-color:#EDEDED;
+    width:100%;
+}    
+
+.SubNav a
+{
+    display:inline-block;
+    padding:5px 10px;
+    text-decoration:none;
+    border-right:1px solid #cccccc;
+    color:#333333;   
+}
+
+.SubNav a:hover, .SubNav .On{color:#0055ff; background-color:#dddddd;}
+
+.PageContent
+{
+    vertical-align:top;
+}
+
+.ProductEditor{}
+
+.ProductEditor b{display:inline-block;width:140px;vertical-align:top;}
+
+.ProductImagePanel{display:inline-block; border:1px solid #545454; margin:0px 10px 10px 0px;position:relative;}
+
+.ProductImagePanel img{display:block; margin:5px;}
+
+.ProductImagePanel input[type=radio]{ padding:5px;}
+.ProductImagePanel input[type=image]{ position:absolute;bottom:5px;right:5px;}
+
+.ConceptImagePanel{display:block;margin:0px 10px 10px 0px;padding:10px;height:150px;width:400px;}
+.ConceptImagePanel strong{display:block;margin-bottom:5px;}
+.ConceptImagePanel img{float:right;margin-left:10px;width:160px;height:120px;border:1px solid #545454;}
+
+.AdminSubmitSetType{display:inline-block;}
+
+.AdminSubmitSetType label{margin-right:20px; vertical-align:baseline;}

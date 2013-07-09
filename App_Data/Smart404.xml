@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+    <rights debug="true" localonly="false" password="letmein"></rights>
+    <default404url>/Default.aspx</default404url>
+    <defaultErrorUrl generatelocalerrors="true">/ApplicationError.aspx</defaultErrorUrl>
+    <exclusions>
+        <!--excluded extensions must be seperated by ;-->
+        <extensions>.jpg;.xsd;.png;.bmp;.axd;.js;</extensions>
+    </exclusions>
+    <defaultDocuments>
+        <item>Default.aspx</item>
+    </defaultDocuments>
+    <hostMappings>
+    </hostMappings>
+    <rewriteRules processExistingPaths="false" includeOriginalUrl="true">
+        <rule enabled="true" name="Store/Home Rule" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(home)</source>
+            <destination>/</destination>
+        </rule>
+        <rule enabled="true" name="Store/Home Rule" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(faq)(\/)(customer|designer)</source>
+            <destination>/{2}.aspx?view={4}</destination>
+        </rule>
+        <rule enabled="true" name="Store/Home Rule" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(press)</source>
+            <destination>/{2}.aspx</destination>
+        </rule>
+        <rule enabled="true" name="Editable Pages" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(about|delivery|modern|privacy|submissionterms|websiteterms|donesubmission|paypaldone)</source>
+            <destination>/PageMachine.aspx?Section={2}</destination>
+        </rule>
+        <rule enabled="true" name="Editable Pages" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(designer)</source>
+            <destination>/PageMachineWithLeft.aspx?Section={2}</destination>
+        </rule>
+        <rule enabled="true" name="Store/Home Rule" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(faq|feedback|contact|customerservice|terms|map|register|LostPassword)</source>
+            <destination>/{2}.aspx</destination>
+        </rule>
+        <rule enabled="true" name="Concept Rule" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(concept|cool)(\/)(concepts|submit)</source>
+            <destination>/{2}/{4}.aspx</destination>
+        </rule>
+        <rule enabled="true" name="Concept Rule" description="This rule allows paths like /faq to be translated to /faq.aspx">
+            <source>(\/)(concept|cool)(\/)(howitworks)</source>
+            <destination>/PageMachine.aspx?Section={4}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(products)(\/)(\d+)</source>
+            <destination>/products/Details.aspx?ProductID={4}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(concept)(\/)(\d+)</source>
+            <destination>/Concept/Details.aspx?ConceptID={4}</destination>
+            <useragent/>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(cool)(\/)(\d+)</source>
+            <destination>/Cool/Details.aspx?CoolID={4}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(concept|cool)(\/)(data)(\/)(image)(\/)(gen)(\/)(StarBar.aspx)</source>
+            <destination>/data/image/gen/starbar.aspx</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(concept|cool)(\/)(data)(\/)((?:[a-z0-9]*))(.aspx)</source>
+            <destination>/data/{6}.aspx</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(products|concepts|cool|settings|faq|press)(\/)(add|edit)</source>
+            <destination>/{2}/{4}/edit.aspx?SubSection={6}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(page)(\/)((?:[a-z0-9]*))</source>
+            <destination>/{2}/{4}/Edit.aspx?SubSection={6}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(settings)(\/)(users)(\/)(add)</source>
+            <destination>/{2}/{4}/EditUser.aspx?UsrID=0</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(settings)(\/)(users)(\/)(edit)(\/)(\d+)</source>
+            <destination>/{2}/{4}/EditUser.aspx?UsrID={10}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(settings)(\/)(admins)(\/)(add)</source>
+            <destination>/{2}/{4}/EditAdmin.aspx?AdmID=0</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(settings)(\/)(admins)(\/)(edit)(\/)(\d+)</source>
+            <destination>/{2}/{4}/EditAdmin.aspx?AdmID={10}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(products|settings)(\/)(Orders|users|advert|admins)</source>
+            <destination>/{2}/{4}/{6}.aspx?SubSection={6}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(products)(\/)(promo)(\/)(add)</source>
+            <destination>/{2}/{4}/PromoEdit.aspx?id=0</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(products)(\/)(promo)(\/)(\d+)(\/)(edit)</source>
+            <destination>/{2}/{4}/PromoEdit.aspx?id={8}</destination>
+        </rule>
+        <rule enabled="true" name="Store Rule" description="This rule will match the path /missingpath unless the directory exists">
+            <source>(\/)(admin13)(\/)(products)(\/)(promo)</source>
+            <destination>/{2}/{4}/PromoList.aspx</destination>
+        </rule>
+    </rewriteRules>
+</configuration>

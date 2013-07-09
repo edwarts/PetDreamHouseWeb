@@ -1,0 +1,15 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPages/Admin.master" AutoEventWireup="false" CodeFile="AdminSettings.master.vb" Inherits="MasterPages_AdminSettings" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" Runat="Server">
+    <asp:panel ID="SubNav" CssClass="SubNav" runat="server">
+        <asp:HyperLink ID="lnkGeneral" runat="server" NavigateUrl="/Admin13/Settings/" Text="General"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkAdd" runat="server" NavigateUrl="/Admin13/Settings/Users" Text="Users"></asp:HyperLink><!--
+     --><asp:HyperLink ID="lnkAdmins" runat="server" NavigateUrl="/Admin13/Settings/Admins" Text="Administrators"></asp:HyperLink>
+    </asp:panel>
+    
+    
+    <asp:ContentPlaceHolder id="SubContentBody" runat="server" />
+</asp:Content>
+

@@ -1,0 +1,52 @@
+﻿<%@ Master Language="VB" CodeFile="Admin.master.vb" Inherits="MasterPages_Admin" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="/App/CSS/Admin.css" rel="stylesheet" type="text/css" />
+    <link href="/App/CSS/Inputs.css" rel="stylesheet" type="text/css" />
+    <link href="/App/CSS/Tables.css" rel="stylesheet" type="text/css" />
+    <link href="/App/CSS/TabContainer.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ToolkitScriptManager>
+    <div id="Container">
+        
+        <div id="Header">
+            <h2>PetDreamHouse Control Panel</h2>
+        </div>
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="150">
+                    <asp:panel ID="MainNav" CssClass="MainNav" runat="server">
+                        <asp:hyperlink ID="lnkHome" runat="server" NavigateUrl="/Admin13">Admin Home</asp:hyperlink>
+                        <asp:hyperlink ID="lnkProducts" runat="server" NavigateUrl="/Admin13/Products">Products</asp:hyperlink>
+                        <asp:hyperlink ID="lnkConcepts" runat="server" NavigateUrl="/Admin13/Concepts">Concepts</asp:hyperlink>
+                        <asp:hyperlink ID="lnkCool" runat="server" NavigateUrl="/Admin13/Cool">Cool Stuff</asp:hyperlink>
+                        <asp:hyperlink ID="Hyperlink1" runat="server" NavigateUrl="/Admin13/Page">Page Editor</asp:hyperlink>
+                        <asp:hyperlink ID="Hyperlink2" runat="server" NavigateUrl="/Admin13/Faq">F.A.Q Editor</asp:hyperlink>
+                        <asp:hyperlink ID="Hyperlink4" runat="server" NavigateUrl="/Admin13/Press">Press Editor</asp:hyperlink>
+                        <asp:hyperlink ID="lnkSettings" runat="server" NavigateUrl="/Admin13/Settings">System Settings</asp:hyperlink>
+                        <asp:hyperlink ID="Hyperlink3" runat="server" NavigateUrl="/Admin13/Logon.aspx?end=true">Log out</asp:hyperlink>
+                    </asp:panel>
+                </td>
+                <td>
+                    <div class="PageContent">
+                        <asp:ContentPlaceHolder id="ContentBody" runat="server" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>

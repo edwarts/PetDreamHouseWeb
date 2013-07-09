@@ -1,0 +1,369 @@
+﻿body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    background-color:#f5f0eb;
+    margin:0px;
+}
+
+h1
+{	
+	font-family: "adelle", Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-size:30px;
+	margin-top:30px;
+	line-height: 15px;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+	line-height:18px;
+    margin:0px 0px 10px 0px;
+}
+
+.PageHeading
+{
+    font-family: "adelle", Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-size:30px;
+	margin-top:30px;
+}
+
+img{border:none;}
+
+#PageNavigation
+{
+    background-image:url(/App/images/body/Header/common/top-bar-slice.png);
+    background-repeat:repeat-x;
+    height:134px;
+}
+
+#PageContent
+{
+    min-height:400px;
+    background-color:#f5f0eb;
+}
+
+#PageFooter
+{
+    background-image:url(/App/images/body/Footer/footer-bg-slice.png);
+    background-repeat:repeat-x;
+    height:335px;
+}
+
+.ContentContainer
+{
+    /*border-left:1px solid yellow;    
+    border-right:1px solid yellow;
+    border-bottom:1px solid yellow;*/
+    width:950px;
+    margin:0px auto;
+    height:inherit;
+    position:relative;
+}
+
+.HomeMenu{padding-top:20px;}
+
+.HomeMenu a
+{
+    border-bottom-width:1px;
+    border-bottom-style:dashed;
+    border-bottom-color:#545454;
+    display:block;
+    margin-bottom:5px;
+    margin-top:10px;
+}
+
+.FooterLinks
+{
+    position:relative;
+    top:10px;
+    left:0px;
+    color:White;
+}
+
+.FooterLinks div
+{
+    display:inline-block;
+    vertical-align:top;
+    width:150px;
+}
+
+.FooterLinks div a
+{
+    display:block;
+    margin-bottom:5px;
+}
+
+.FooterLinks div a:hover{text-decoration:underline;}
+
+.FooterLinks a{color:White;text-decoration:none; display:inline-block;}
+
+#PageFooter .Social{position:absolute;top:5px;right:0px;}
+#PageFooter .Logo{position:absolute;top:60px;right:0px;}
+
+.ProductText{padding:15px 20px 20px 5px;}
+
+.ProductText h2{padding:0px;margin:0px;font-family:Arial;font-size:26px;font-weight:bold;color:#474747}
+.ProductText h3{padding:0px;margin:3px 0px 5px 0px;font-family:Arial;font-size:21px;font-weight:bold;color:#474747;display:inline-block;}
+.ProductText h3.Price{background-color:Black;color:White;padding:0px 3px;}
+
+.ProductText h4{padding:0px;margin:10px 0px;font-family:Arial;font-size:16px;font-weight:bold;color:#474747}
+.ProductText h5{padding:0px;margin:5px 0px;font-family:Arial;font-size:12px;font-weight:bold;}
+
+.ProductText .Green{color:#277c6b;}
+
+.ProductText p{color:#333333;margin:0px;padding:0px;margin-bottom:10px;}
+
+.ProductText ul{padding-left:15px;}
+.ProductText ul li{margin:5px 0px 5px 0px; line-height:15px;color:#333333;}
+
+.OtherProducts{margin:20px 0px;}
+
+.FaqTable{color:#474747;font-size:14px;margin-top:20px;}
+
+.FaqTable tr{}
+
+.FaqTable tr td img{margin-right:15px;}
+
+.FaqTable .Question td{padding-bottom:16px;font-weight:bold;}
+.FaqTable .Answer td{padding-bottom:30px;}
+
+h2{padding:0px;margin:3px 0px 10px 0px;font-family:"adelle", Arial, Helvetica, sans-serif;font-size:24px;font-weight:400;color:#474747;}
+ul li{line-height:20px;}
+
+h3{padding:0px;margin:3px 0px 5px 0px;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:600;color:#474747;}
+
+h3 a{color:#000000; text-decoration:none}
+
+h4{padding:0px;margin:3px 0px 5px 0px;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;color:#474747;}
+
+ul li{line-height:20px;}
+
+.ModalBG
+{
+    opacity:0.70;
+    background-color:Black;
+}
+
+.Popup
+{
+    border:4px solid #111111;
+    background-color:White;
+    position:relative;
+}
+.PopupCloser{position:absolute;top:5px;right:5px;cursor:pointer;}
+
+.PopupTitle
+{
+    display:block;
+    padding:5px;
+    font-weight:bold;
+    font-size:18px;
+    background-color:#333333;
+    color:White;
+}
+
+.PopupControls
+{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    text-align:right;
+}
+
+
+.Swatch
+{
+    display:inline-block;
+    padding:0px 0px 10px 0px;
+    vertical-align:middle;
+    margin-bottom:30px;
+    margin-right:20px;
+}
+
+.Swatch img{ vertical-align:middle;border:1px solid #bfbbb7;}
+.SwatchText{padding:10px;}
+
+.ProductList
+{
+    display:inline-block;
+    cursor:pointer;
+}
+
+.ProductList .ProductImage{}
+.ProductList .ProductName{display:block;padding:3px 0px 0px 0px;font-size:16px;font-weight:bolder;}
+.ProductList .ProductPrice{display:block;padding:3px 0px 0px 0px;font-size:18px;font-weight:bolder;}
+.ProductList .ProductDesigner{display:block;padding:3px 0px 10px 0px;font-size:12px;color:#277c6b;text-decoration:none;display:block;}
+
+.ProductImages{margin-top:5px;}
+
+.ProductImages img
+{
+    margin-right:3px;
+    cursor:pointer;
+    border:1px solid #cccccc;
+}
+
+
+
+.OtherProduct
+{
+    display:inline-block;
+    cursor:pointer;
+}
+
+.OtherProduct .OtherProductImage{width:174px;}
+.OtherProduct .OtherProductName{display:block;padding:3px 0px 0px 0px;font-size:18px;font-weight:bolder;}
+.OtherProduct .OtherProductPrice{display:block;padding:3px 0px 0px 0px;font-size:18px;font-weight:bolder;}
+.OtherProduct .OtherProductDesigner{display:block;padding:3px 0px 0px 0px;font-size:12px;color:#277c6b;text-decoration:none;display:block;}
+.OtherProduct .OtherProductCategoryImage{margin:5px 5px 5px 0px;}
+
+.ConceptListItem
+{
+    display:inline-block;
+    cursor:pointer;
+}
+
+.ConceptListItem .StatusImage
+{
+    display:block;
+}
+
+.ConceptListItem .Image{display:block;}
+
+.ConceptListItem .Name{display:block;padding:3px 0px 0px 0px;font-size:4px;font-weight:bolder; visibility:hidden}
+.ConceptListItem .Designer{display:block;padding:3px 0px 0px 0px;font-size:12px;color:#277c6b;text-decoration:none;}
+.ConceptListItem .Score{display:block;padding:3px 0px 0px 0px;font-size:9px;color:#474747;}
+.ConceptListItem .StarBar{padding:2px 0px 10px 0px;margin-bottom:10px;margin-right:10px;}
+.ConceptListItem .CurrentScore{padding:3px 2px 10px 0px;margin:2px 0px 10px 0px; vertical-align:top;font-size:22px; font-weight:bold; color:#464646;}
+
+.ConceptView{display:block;margin-bottom:30px;}
+
+.ConceptView .DisplayLeft{padding-top:25px;position:relative;}
+.ConceptView .StatusIcon{float:left;margin-left:5px; margin-right:7px;}
+.ConceptView .DesignTitle{font-size:24px;font-weight:bold;display:block;margin:0px; margin-top:10px}
+.ConceptView .DesignedBy{font-size:14px;font-weight:normal;display:block;color:#277c6b; margin-top:5px}
+
+.ConceptView .DisplayRight{padding-top:0px;position:relative;margin-top:80px;width:327px;min-height:568px;}
+.ConceptView .DisplayRight h2{margin:0px 0px 10px 0px; color:#464646; font-size:20px}
+.ConceptView .DisplayRight .VoteButton{margin-left:15px;display:inline-block; vertical-align:middle}
+.ConceptView .DisplayRight .DottedLine{height:2px;border-bottom:1px dashed #b1a59d;}
+
+.ConceptView .DisplayRight .Details{margin:10px 0px;line-height:28px;color:#464646;}
+.ConceptView .DisplayRight .Details b{display:inline-block;width:140px;}
+.ConceptView .Green{color:#277c6b; font-weight:bold;}
+
+.ConceptView .DisplayRight .Description{margin:10px 0px;color:#464646;}
+.ConceptView .DisplayRight .VoteLarge{margin-left:10px; font-size:44px; font-weight:bold;color:#464646;}
+
+.ConceptView .DisplayRight .VoteRBS {display:inline-block;}
+.ConceptView .DisplayRight .VoteRBS div{display:inline-block;text-align:center; vertical-align:middle;width:31px;}
+
+.ConceptView .DisplayRight .VoteResponse{display:block;margin:10px;margin-left:0px;font-weight:bold;color:#277c6b;}
+
+.ConceptView .Thumbs img{cursor:pointer;}
+
+.ConceptSubmitSetType{}
+
+.ConceptSubmitSetType label{margin-right:20px; vertical-align:baseline;}
+
+
+.CoolListItem{display:inline-block;cursor:pointer;margin-bottom:20px;}
+.CoolListItem .Image{display:block;}
+.CoolListItem .Name{display:block;padding:3px 0px 0px 0px;font-size:18px;font-weight:bolder;}
+.CoolListItem .From{display:block;padding:3px 0px 0px 0px;font-size:12px;color:#277c6b;text-decoration:none;}
+
+.CoolView{display:block;margin-bottom:30px;}
+
+.CoolView .DisplayLeft{padding-top:25px;position:relative;}
+.CoolView .StatusIcon{float:left;margin-left:5px; margin-right:7px;}
+.CoolView .DesignTitle{font-size:24px;font-weight:bold;display:block;margin:0px;margin-top:10px}
+.CoolView .From{font-size:14px;font-weight:normal;display:block;color:#277c6b;margin-top:5px}
+
+
+.CoolView .DisplayRight{padding-top:0px;position:relative;margin-top:80px;width:327px;min-height:490px;}
+.CoolView .DisplayRight h2{margin:0px 0px 10px 0px; color:#464646; font-size:20px}
+.CoolView .DisplayRight .What{display:block;margin:10px 0px;color:#464646;}
+.CoolView .DisplayRight .Price{display:block;color:#277c6b;font-weight:bold;}
+.CoolView .DisplayRight .Price span{margin-left:20px;color:#464646;font-weight:bold;}
+.CoolView .DisplayRight .DottedLine{height:2px;border-bottom:1px dashed #b1a59d;}
+
+.CoolView .DisplayRight .Why{display:block;margin:10px 0px;color:#464646;}
+.CoolView .DisplayRight .Where{display:block;color:#277c6b;font-weight:bold;text-decoration:none;}
+.CoolView .Green{color:#277c6b; font-weight:bold;}
+
+.CoolView .Thumbs img{cursor:pointer;}
+
+
+.FaqFilterLinks a
+{
+    margin-right:20px;
+}
+
+.LoginForm{padding:0px 10px;}
+
+
+.ContactForm{width:230px;}
+
+.ContactForm h2{}
+
+.ContactForm span{display:block;}
+
+
+.RightBlocks img{display:block;margin-bottom:10px;}
+
+.ResponseLabel{color:Red;font-weight:bold;}
+
+div.modern {display:inline-block; margin-left:5px; width:150px; height:240px; vertical-align:top}
+p.modern {margin:3px 3px 3px 3px}
+
+.BasketTable{border-top:1px dashed #cccccc;}
+
+.BasketTable tr td{padding:5px; border-bottom:1px dashed #cccccc;}
+
+.BasketTable .Name b{font-size:14px;display:block;margin-bottom:3px;}
+.BasketTable .Name i{font-size:12px;display:block; color:#333333;}
+
+.BasketTable .Price b{font-size:12px;display:block;margin-bottom:3px;}
+.BasketTable .Price i{font-size:12px;display:block; color:#333333;}
+
+.WarningLabel
+{
+    color:#ffffff;
+    padding:15px;
+    border:1px solid #ffffff;
+    background-color:#262626;
+    font-weight:bold;
+}
+
+p a 
+{
+	color:inherit;
+}
+
+.FooterBlocks{margin-bottom:20px;}
+
+.FooterBlocks a{ display:inline-block; margin-left:2px;}
+
+.Comment{position:relative;}
+.Comment .Date{display:inline-block;width:150px; font-weight:bold;color:#277c6b;}
+.Comment .Name{display:inline-block; font-weight:bold;color:#277c6b;}
+.Comment .Delete{position:absolute;top:0px;right:10px;}
+.Comment .Text{display:block; margin:10px 0px 25px 0px;}
+
+
+.SelectedAnimalTypes{margin:5px 0px 10px 0px;}
+
+.SelectedAnimalTypes img{margin-right:5px;}
+
+.PressTable {color:#474747;font-size:14px;margin-top:20px;}
+
+.PressTable tr td img{margin-right:15px;}
+
+.PressTable .Title td{padding-bottom:5px;font-weight:bold;font-size:14px;}
+
+.PressTable .Description td{padding-bottom:40px;}
+.PressTable tr td a{text-decoration:none;color:inherit;}

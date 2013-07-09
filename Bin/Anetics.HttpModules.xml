@@ -1,0 +1,141 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Anetics.HttpModules
+</name>
+</assembly>
+<members>
+<member name="P:Anetics.HttpModules.My.Resources.Resource1.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resource1.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resource1.BrowserTest">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Help Page&lt;/title&gt;
+        &lt;style type="text/css"&gt;body{font-family:calibri;font-size:12px;}&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+        &lt;h2&gt;Smart 404 Help&lt;/h2&gt;
+        &lt;br /&gt;
+        &lt;h4&gt;Host Mappings&lt;/h4&gt;
+        Smart404 can be configured to remap to root folders based on the host header.&lt;br /&gt;&lt;br /&gt;
+        &lt;b&gt;EG.&lt;/b&gt; m.yourwebsite.com/index.html &lt;i&gt;can be mapped to&lt;/i&gt; /mobile/index.html
+        &lt;br /&gt;&lt;br /&gt;
+         [rest of string was truncated]";.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resource1.EditPage">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Configuration Editor&lt;/title&gt;
+        &lt;style type="text/css"&gt;body{font-family:calibri;font-size:12px;}&lt;/style&gt;
+        &lt;script type="text/javascript"&gt;
+
+        &lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+        &lt;form action="/?Smart404=editconfig" method="post"&gt;
+            &lt;input type="hidden" id="hdnScroll" value="0" /&gt;
+            &lt;h2&gt;Configuration Editor&lt;/h2&gt;
+
+            XcontrolsX
+
+        &lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resource1.ErrorPage">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+        &lt;style type="text/css"&gt;body{font-family:calibri;font-size:12px;}&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+        &lt;h4&gt;[message]&lt;/h4&gt;
+        &lt;br /&gt;
+        &lt;p&gt;[stacktrace]&lt;/p&gt;
+        &lt;br /&gt;&lt;br /&gt;
+        &lt;a href="[retryUrl]" onclick="location.reload();"&gt;Try Again...&lt;/a&gt;
+	&lt;/body&gt;
+&lt;/html&gt;.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resource1.HelpPage">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Help Page&lt;/title&gt;
+        &lt;style type="text/css"&gt;body{font-family:calibri;font-size:12px;}&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+        &lt;h2&gt;Smart 404 Help&lt;/h2&gt;
+        &lt;br /&gt;
+        &lt;h4&gt;Host Mappings&lt;/h4&gt;
+        Smart404 can be configured to remap to root folders based on the host header.&lt;br /&gt;&lt;br /&gt;
+        &lt;b&gt;EG.&lt;/b&gt; m.yourwebsite.com/index.html &lt;i&gt;can be mapped to&lt;/i&gt; /mobile/index.html
+        &lt;br /&gt;&lt;br /&gt;
+         [rest of string was truncated]";.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resource1.SetupPage">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Smart 404 Installer&lt;/title&gt;
+        &lt;style type="text/css"&gt;body{font-family:calibri;font-size:12px;}&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	    &lt;form action="/?Smart404=install" method="post"&gt;
+            &lt;h2&gt;Smart 404 Installation&lt;/h2&gt;
+            &lt;table width="500"&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;b&gt;Default Redirect&lt;/b&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;input type="text" name="defaultUrl" value="[defaultUrl]" s [rest of string was truncated]";.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resource1.Smart404Config">
+	<summary>
+  Looks up a localized string similar to &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;configuration&gt;
+    &lt;rights debug="true" localonly="false" password="letmein"&gt;&lt;/rights&gt;
+    &lt;default404url&gt;~/&lt;/default404url&gt;
+    &lt;defaultErrorUrl generatelocalerrors="true"&gt;/Error.aspx&lt;/defaultErrorUrl&gt;
+    &lt;exclusions&gt;
+        &lt;!--excluded extensions must be seperated by ;--&gt;
+        &lt;extensions&gt;.jpg;.xsd;.png;.bmp;.axd;.css;.js;&lt;/extensions&gt;
+    &lt;/exclusions&gt;
+    &lt;defaultDocuments&gt;
+        &lt;item&gt;default.aspx&lt;/item&gt;
+        &lt;item&gt;default.a [rest of string was truncated]";.
+</summary>
+</member><member name="T:Anetics.HttpModules.My.Resources.Resource1">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Anetics.HttpModules.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Anetics.HttpModules.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
